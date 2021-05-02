@@ -53,14 +53,15 @@
 -cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/video/src
 -D tools=7.8.0
 -D lime-canvas
+-D FLX_NO_DEBUG
 -D howlerjs
 -D no-compilation
 -D openfl-html5
+-D NAPE_RELEASE_BUILD
 -D lime-webgl
 -D lime-dom
 -D lime-howlerjs
 -D lime-html5
--D openfl-disable-handle-error
 -D html5
 -D web
 --remap flash:openfl

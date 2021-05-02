@@ -80,6 +80,7 @@ class Dialogue extends FlxSpriteGroup
 					dialogueBox.visible = false;
 					new FlxTimer().start(3, function lolDoShit(fuckingtimer:FlxTimer)
 					{
+						PlayState.losewin = 'lose';
 						FlxG.switchState(new LoseState());
 					}, 1);
 					PlayState.player.doThing("sleep");
