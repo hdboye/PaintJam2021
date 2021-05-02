@@ -1,0 +1,2 @@
+- soup = energy, paint = takes energy, order soup thru computer
+yup this is good i think

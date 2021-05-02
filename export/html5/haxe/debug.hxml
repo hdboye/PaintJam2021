@@ -1,0 +1,71 @@
+-main ApplicationMain 
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/flixel/4,8,1
+-D flixel=4.8.1
+--macro openfl._internal.ExtraParams.include()
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/lib
+-D openfl=9.0.2
+--macro lime._internal.macros.DefineMacro.run()
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/lime/7,8,0/src
+-D lime=7.8.0
+--macro keep('IntIterator')
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/hscript/2,4,0
+-D hscript=2.4.0
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/flixel-addons/2,10,0
+-D flixel-addons=2.10.0
+-cp source
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/application/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/assets/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/bitmapdata/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/displayobject/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/errors/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/eventdispatcher/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/externalinterface/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/filereference/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/filters/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/geom/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/graphics/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/input/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/loader/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/movieclip/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/printing/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/renderer-cairo/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/renderer-canvas/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/renderer-core/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/renderer-dom/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/renderer-flash/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/renderer-stage3d/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/security/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/sensors/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/shader/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/sharedobject/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/socket/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/sound/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/stage/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/stage3d/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/system/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/telemetry/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/textfield/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/tilemap/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/urlloader/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/urlrequest/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/urlstream/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/utils/src
+-cp C:/Users/Tariq/Downloads/haxe libs/HAXE LIBS/openfl/9,0,2/packages/video/src
+-D tools=7.8.0
+-D lime-canvas
+-D howlerjs
+-D no-compilation
+-D openfl-html5
+-D lime-webgl
+-D lime-dom
+-D lime-howlerjs
+-D lime-html5
+-D openfl-disable-handle-error
+-D html5
+-D web
+--remap flash:openfl
+--macro flixel.system.macros.FlxDefines.run()
+-js export/html5/bin/PaintJam2021.js
+-cp export/html5/haxe
+-D html5
+-debug
