@@ -27,30 +27,33 @@ class Dialogue extends FlxSpriteGroup
 	public function new(anim:String, ?audio:Bool, text:Array<String>, whichOne:String)
 	{
 		super();
+		// variable definition from object creation
 		txtArray = text;
 		globalAnim = anim;
 		globalAudio = audio;
-		endShit = whichOne;
+		endShit = whichOne; 
 		antialiasing = false;
-		FlxG.sound.pause();
+		FlxG.sound.pause(); // pause all sound so we have no overlapping music
+		// import all frames and animations from the spritesheet
 		tex = FlxAtlasFrames.fromSparrow("assets/images/inGame/dialogue.png", "assets/images/inGame/dialogue.xml");
 		dialogueBox.frames = tex;
 		dialogueBox.animation.addByPrefix("happy", "happy", 24, false);
 		dialogueBox.animation.addByPrefix("sad", "sad", 24, false);
 		dialogueBox.animation.addByPrefix("regular", "regular", 24, false);
 		dialogueBox.setGraphicSize(Std.int(dialogueBox.width) * 2, Std.int(dialogueBox.height) * 2);
-		dialogueBox.setPosition(-100, -30);
+		dialogueBox.setPosition(-100, -30); // make sure its properly sized and placed
 		dialogueBox.updateHitbox();
-		dtext.setFormat("assets/fonts/vcr.ttf", 64, FlxColor.WHITE, LEFT);
-		dtext.sounds = [FlxG.sound.load("assets/sounds/bap" + Main.soundExt)];
-		dtext.visible = true;
-		dtext.setPosition(80, 495);
-		presskey.setFormat("assets/fonts/vcr.ttf", 32, FlxColor.WHITE, LEFT);
+		dtext.setFormat("assets/fonts/vcr.ttf", 64, FlxColor.WHITE, LEFT); // import basic font for text
+		dtext.sounds = [FlxG.sound.load("assets/sounds/bap" + Main.soundExt)]; // set character text sound
+		dtext.visible = true; 
+		dtext.setPosition(80, 495); 
+		presskey.setFormat("assets/fonts/vcr.ttf", 32, FlxColor.WHITE, LEFT); // this one's a different size from dtext
 		presskey.text = "Press ANY key to continue.";
+		// add everything to the current object
 		add(dialogueBox);
 		add(dtext);
 		add(presskey);
-		if (globalAudio == true)
+		if (globalAudio == true) // if the function told us we can play audio.. we play music!
 		{
 			FlxG.sound.playMusic("assets/music/dialogue" + Main.soundExt, 1, true);
 		}
